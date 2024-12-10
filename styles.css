@@ -14,7 +14,18 @@ body {
   }
   
   h1 {
+    margin-bottom: 10px;
+  }
+  
+  .scoreboard {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
+  }
+  
+  .scoreboard span {
+    font-size: 1.2em;
+    font-weight: bold;
   }
   
   #game-board {
@@ -23,7 +34,7 @@ body {
     grid-template-rows: repeat(3, 100px);
     gap: 5px;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto 20px;
   }
   
   .cell {
@@ -42,14 +53,19 @@ body {
   }
   
   #game-status {
-    margin-top: 20px;
+    margin-bottom: 15px;
     font-size: 1.2em;
   }
   
-  #reset-button {
-    margin-top: 15px;
+  .controls button {
+    margin: 5px;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
   }
   
