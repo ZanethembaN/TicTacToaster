@@ -7,14 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="game-container">
-    <h1>Tic Tac Toe</h1>
-    <div id="game-board">
-      <!-- Cells will be generated dynamically by JS -->
-    </div>
-    <div id="game-status">Player X's turn</div>
-    <button id="reset-button">Reset Game</button>
-  </div>
+    <div class="game-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="scoreboard">
+          <span id="player-x-score">X: 0</span>
+          <span id="draw-score">Draws: 0</span>
+          <span id="player-o-score">O: 0</span>
+        </div>
+        <div id="game-board"></div>
+        <div id="game-status">Choose a game mode</div>
+        <div class="controls">
+          <button id="pvp-mode">Player vs Player</button>
+          <button id="pvc-mode">Player vs AI</button>
+          <button id="reset-button" disabled>Reset Game</button>
+        </div>
+      </div>
   <script src="script.js"></script>
 </body>
 </html>
