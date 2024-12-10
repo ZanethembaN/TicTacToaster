@@ -17,39 +17,3 @@ body {
     margin-bottom: 20px;
   }
   
-  #game-board {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
-    justify-content: center;
-    margin: 0 auto;
-  }
-  
-  .cell {
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    font-size: 2em;
-    text-align: center;
-    line-height: 100px;
-    cursor: pointer;
-  }
-  
-  .cell.taken {
-    pointer-events: none;
-  }
-  
-  #game-status {
-    margin-top: 20px;
-    font-size: 1.2em;
-  }
-  
-  #reset-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    font-size: 1em;
-    cursor: pointer;
-  }
-  
